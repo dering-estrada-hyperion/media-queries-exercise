@@ -96,6 +96,7 @@ footer {
 #social-media-links ul li a {
     display: inline-block;
     padding-right: 1em;
+    color: black;
 }
 
 /*This is where we set the size so 760px and above will have the following styling*/
