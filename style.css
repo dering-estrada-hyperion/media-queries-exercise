@@ -1,8 +1,11 @@
+/*Change font in the body to sans-serif*/
 body {
     font-family: sans-serif;
     box-sizing: border-box;
 }
 
+/*Change background color, add a border, and add padding to make it look like the wireframe*/
+/*Align text to the center since it was hanging off to the left*/
 .alert-info {
     background-color: #ccffff;
     border: 2px solid lightgrey;
@@ -10,17 +13,24 @@ body {
     text-align: center;
 }
 
+/*Change the a tag inside of alert-info to be the same as the wireframe*/
 .alert-info a {
     color: black;
     text-decoration: none;
 }
 
+/*Align the text to the center because it was off to the left*/
+/*Change the font-size to match the wireframe a little better in my opinion*/
 h1 {
     text-align: center;
     font-size: 2.5em;
 }
 
-
+/*Display as flex so they can be arranged as a column or a row*/
+/*Align them to the center*/
+/*Set the list style to none so there's no dot*/
+/*Get rid of the padding on the UL because it was pushing it to the right*/
+/*Change the width because the boxes weren't lining up*/
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -36,6 +46,8 @@ h1 {
     width: 100%;
 }
 
+/*Display the links as inline blocks so they have more space*/
+/*Add some padding to them so it looks better*/
 .nav-links li a {
     display: inline-block;
     padding: 1em 0.5em;
@@ -45,6 +57,7 @@ h1 {
     color: blue;
 }
 
+/*Feel free to edit this code to see what it does, I think its easier showing than explaining*/
 .header-img {
     width: 100%;
 }
@@ -53,6 +66,7 @@ h1 {
     width: inherit;
 }
 
+/*Changes them to inline block for spacing and gives them an added margin*/
 #main, .sub-section {
     display: inline-block;
     margin: 1em auto;
@@ -63,6 +77,7 @@ h1 {
     font-size: 1em;
 }
 
+/*Displays as flex so the elements can be spaced across from each other and aligns then vertically*/
 footer {
     display: flex;
     flex-direction: row;
@@ -76,42 +91,61 @@ footer {
     padding-left: 0;
 }
 
+/*Displays links as inline block*/
 #social-media-links ul li a {
     display: inline-block;
     padding-right: 1em;
 }
 
-
+/*This is where we set the size so 760px and above will have the following styling*/
 @media screen and (min-width: 760px) {
+    /*Hides the first element with the light blue background*/
     .hidden-on-desktop {
         display: none;
 
     }
+
+    /*Moves the H1 to the left*/
     h1 {
         float: left;
     }
+
+    /*Moves the nav bar to the right side and sets the line height to be the same font-size as h1*/
+    /*so that the elements are centered*/
     nav {
         float: right;
         margin-right: 1em;
         line-height: 2.5em;
     }
+    /*Changes the direction to a row so the elements go horizontally*/
     .nav-links {
         flex-direction: row;
     }
+
+    /*Changes the background color to the background of the page*/
     .nav-links li a{
         background-color: white;
     }
+
+    /*Float these left so they're next to each other*/
     #main, .sub-section {
         float: left;
     }
+
+    /*Give main a margin right so that it's not too close to the sub section*/
+    /*Change the width to be 50% so both elements have enough space to be on the same line*/
+    /*Calc is used to account for the 1em added as a margin. Without this the sub section would be*/
+    /*pushed off the page*/
     #main {
         width: calc(50% - 1em);
         margin-right: 1em;
     }
+
     .sub-section {
         width: 50%;
     }
 
+    /*Clears the footer so that it won't be behind or above the two sections above*/
     footer {
         width: 100%;
         clear: both;
