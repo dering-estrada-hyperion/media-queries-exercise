@@ -62,6 +62,7 @@ h1 {
     width: 100%;
 }
 
+/*Inherits the width of the parent which would be .header-img*/
 .header-img img {
     width: inherit;
 }
