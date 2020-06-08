@@ -5,7 +5,7 @@ body {
 
 .alert-info {
     background-color: #ccffff;
-    border: 1px solid grey;
+    border: 2px solid lightgrey;
     padding: 1em;
     text-align: center;
 }
@@ -27,7 +27,7 @@ h1 {
     align-items: center;
     list-style: none;
     padding-left: 0;
-    width: calc(100% - 2em);
+    width: calc(100% - 1em);
     margin-bottom: 0;
 }
 
