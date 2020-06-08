@@ -54,7 +54,8 @@ h1 {
 }
 
 #main, .sub-section {
-    margin: 2em auto;
+    display: inline-block;
+    margin: 1em auto;
 }
 
 .sub-section {
@@ -67,4 +68,32 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+@media screen and (min-width: 960px) {
+    .hidden-on-desktop {
+        display: none;
+
+    }
+    h1 {
+        float: left;
+    }
+    nav {
+        float: right;
+        margin-right: 1em;
+    }
+    .nav-links {
+        flex-direction: row;
+    }
+    .nav-links li a{
+        background-color: white;
+        margin: auto;
+    }
+    #main, .sub-section {
+        width: 50%;
+        float: left;
+    }
+    footer {
+        clear: both;
+
+    }
 }
